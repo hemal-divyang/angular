@@ -22,3 +22,7 @@ export class HighlightDirective {
 
 
 }
+
+
+//in html 
+<p appHighlight>this is highlight text</p>
