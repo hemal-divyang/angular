@@ -14,3 +14,10 @@ export class TitlePipe implements PipeTransform {
   }
 
 }
+
+//in html
+<!--show mr / mrs before name-->
+
+<div *ngFor="let p of person">
+    {{p.name | title : p.gender}}
+</div>
