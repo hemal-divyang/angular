@@ -1,0 +1,13 @@
+//CONTENT PROJECTION (ng-content)
+
+1. create child and parent component
+2. pass data to child component from parent compoent using @Input()
+3. use child component multiple times in parent component for different data.
+   ex. <child-compnent [parentdata]="salesData"></child-component>
+		<child-compnent [parentdata]="purchasedData"></child-component>
+4. you have to use title for child component based on data what you pass to input property.
+	ex.
+	<child-compnent [parentdata]="salesData"><h1>sales data</h1></child-component>
+		<child-compnent [parentdata]="purchasedData"><h1>purchased data</h1></child-component>
+5. above approch will not allow to add title in between child tags
+6. use <ng-content> in child component and there you can give title 
