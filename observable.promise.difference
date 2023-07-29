@@ -1,0 +1,36 @@
+//OBSERVABLE
+
+1. import observable from rxjs
+2. create observable in component level
+	const observable = new Observable(data)=>{
+		sertTimeout(()=>{
+			data.next('observable working')
+		},3000)
+	}
+3. subscribe the observable
+	observable.subscribe(res=>{
+		console.log(res)
+	});
+	
+//PROMISE
+
+1. create promise in component
+   const promise = new Promise((resolve,reject)=>{
+	setTimeout(()=>{
+		resolve('promise working')
+	},3000)
+   });
+2. call the promise
+	promise.then(res=>{
+		console.log(res);
+	})
+	.catch(err=>{
+		console.log(err)
+	});
+	
+//DIFFERENCE BETWEEN OBSERVABLE AND PROMISE
+
+1. observale emit multiple value but promise emit one value
+2. observable can use multiple operators like filter,map.. but promise can not
+3. promise calls as soon as create but observable can call once it will be subscribe.
+4. observable can be unsubscribe but promise can not be 
