@@ -1,0 +1,21 @@
+//INTERCEPTOR
+
+1. create interceptor by ng g interceptor
+2. implement HttpInterceptor in class
+3. import HttpInterceptor from angular/common/http
+4. create method
+	intercept(request, next){
+	// modify request below
+	
+	const API_KEY = 'test'
+	const req = request.clone({
+		setHeader: {
+			API_KEY
+		}
+	})
+	
+	return next.handle(req)
+	}
+5. in app.module in provider add HTTP_INTERCEPTOR, useClass: HeaderInterceptor
+6. import both HTTP_INTERCEPTOR and HeaderInterceptor in app.module
+7. direct request can not be modify so use clone and modify
