@@ -1,0 +1,34 @@
+//PARENT TO CHILD, CHILD TO PARENt
+
+
+// parent to child
+parent.component.html
+<div>
+	<app-child [uname]="userName"></app-child>
+</div>
+
+parnet.component.ts
+userName:string= 'Hemal'
+
+child.component.ts
+@Input()uname:string
+
+//child to parent
+parent.component.html
+<div>
+	{{childData}}
+	<app-child (notify)="parentMethod($event)"></app-child>
+</div>
+parent.component.ts
+childData:string;
+parentMethod(data){
+	this.childData = data
+}
+child.cpomponent.html
+<button (click)="passData()">send data to parent</button>
+child.component.ts
+@Output()notify:EventEmitter<string> = new EventEmmiter<string>();
+
+passData(){
+	this.notify.emit('this message is coming from child component)
+}
