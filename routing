@@ -1,0 +1,21 @@
+// ROUTING 
+
+app.module.ts
+
+const routes:Routes=[
+{path:'',redirectTo:'users,pathMatch:'full'}//default route
+	{path:'users',component:UserComponent,
+	children:[
+		{path:'user-profile', component: UserProfileComponent}
+	]}, // module contains multiple component can be added in childern array
+	{path:'about',component:AboutComponent},
+	{path:'contact',component:ContactComponent},
+	{path:'search',loadChildren:()=>import('../search.module').then(m=>m.SearchModule} // lazyloading
+	{path:'**', redirectTo:'users'}//when path not match, redirect to user page
+
+]
+
+in html
+<a routerLink="/users"></a> 
+<a routerLink="/about"></a>
+<a routerLink="/contact"></a>
