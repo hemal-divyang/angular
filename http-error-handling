@@ -1,0 +1,29 @@
+//HTTP ERROR HANDLING 
+
+handle error while call http service
+import 'rxjs/add/operator/catch
+import 'rxjs/add/operator/throw
+import { Observable } from rxjs/Observable;
+
+
+import HttpClientModule in app.module.ts
+import HttpClient service in UserService
+inject HttpClient service in constructor
+
+getAllUser(){
+	return this.http.get('https://jsonplaceholder.typicode.com/users')
+	.catch((error)=>{
+		return Observable.throw(error);
+	})
+}
+
+in app.component.ts
+import UserService, inject service in constructor
+
+ngOnInit(){
+	this.userService.getAllUser().subscribe((data)=>{
+		this.users = data;
+	},(err)=>{
+		this.errorMsg = 'internal isssue'
+	})
+}
