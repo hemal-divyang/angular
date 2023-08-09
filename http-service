@@ -1,0 +1,19 @@
+//HTTP SERVICE
+communicate to backend  
+
+import HttpClientModule in app.module.ts
+import HttpClient service in UserService
+inject HttpClient service in constructor
+
+getAllUser(){
+	return this.http.get('https://jsonplaceholder.typicode.com/users')
+}
+
+in app.component.ts
+import UserService, inject service in constructor
+
+ngOnInit(){
+	this.userService.getAllUser().subscribe((data)=>{
+		this.users = data;
+	})
+}
