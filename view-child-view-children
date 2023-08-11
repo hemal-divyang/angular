@@ -1,0 +1,45 @@
+// @ViewChild/@ViewChildren decorator provides us with a easy and simple way to access and manipulate
+the properties and methods of a Child Component
+
+//ViewChild return first matching element of the DOM, it returns ElementRef 
+1. component html add refrence to tag
+   ex <p #heightlight></p>
+2. component ts file import ViewChild
+  @ViewChild('heightlight') marker : ElementRef
+
+  // lifecycle hook which execute after view of component initialize 
+  ngAftreViewInit(){
+    console.log(this.marker)
+    this.market.nativeElement.style.color="red"
+  }
+
+// viewChildren return all the maching element of the DOM, it returns QueryList
+  1. component html add refrence to tag
+   ex <p #heightlight></p>
+2. component ts file import ViewChild
+  @ViewChildren('heightlight') marker : QueryList
+
+  // lifecycle hook which execute after view of component initialize 
+  ngAftreViewInit(){
+    console.log(this.marker)
+    this.market.first.nativeElement.style.color="red";
+    this.market.last.nativeElement.style.color="green"
+  }
+
+  //viewChild can be use for child component,
+  //able to access child function in to parent compoent
+  // click in parent component and bind data in
+  1. <app-child #childView></app-child>
+  2. parent compoent html
+{{child.counter}}
+  <button (click)="inc()"></button>
+   in parent component ts 
+  @ViewChild('childView') marker : ChildComponent
+  inc(){
+    this.marker.increment() //accessing chil function in parent
+  }
+  3. child compoent create method
+  increment(){
+    this.counter++;
+  }
+  
