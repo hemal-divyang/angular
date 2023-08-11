@@ -10,4 +10,16 @@
 	<child-compnent [parentdata]="salesData"><h1>sales data</h1></child-component>
 		<child-compnent [parentdata]="purchasedData"><h1>purchased data</h1></child-component>
 5. above approch will not allow to add title in between child tags
-6. use <ng-content> in child component and there you can give title 
+6. use <ng-content> in child component html and in parent component where <app-child> is there, there you can give title
+   ex child component html
+	<ng-content></ng-content>
+      parent component html
+	<app-child><h1>title goes here...</h1></app-child>
+7. multiple content to be projected
+  	 ex in parent component html
+	 <app-child><h1 class="header">content goes here...</h1><a href="" class="link"></a></app-child>
+	 <app-child><h1 class="header">content goes here...</h1><a href="" class="link"></a></app-child>
+	in child compoent use multiple time content projection 
+	<ng-content select="header"></ng-content>
+	<div>data...</div>
+        <ng-content select="link"></ng-content>
