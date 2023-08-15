@@ -15,23 +15,21 @@ Async - to handle asynchronus data
 
 import { Pipe, PipeTransform } from '@angular/core';
 
-@Pipe({
-  name: 'age'
-})
-export class AgePipe implements PipeTransform {
-
-  transform(value:any,args?:any){
-	let curetnYear = new Date().getFullYear();
-	let userBirthYear = new Date(value).getFullYear();
-	let userAge = curetnYear - userBirthYear;
-	return userAge;
-}
-
+@Pipe({ name: 'expiredPipe' })
+export class ExipredPipe implements PipeTransform {
+    constructor() {}
+    transform(data): any {
+        const date = new Date();
+        data = new Date(data);
+        data.setDate(new Date(data).getDate() + 1);
+        return data > new Date(`${(date.getMonth() + 1)}/${(date.getDate())}/${(date.getFullYear())}`) ? '' : 'expired';
+        // return date;
+    }
 }
 
 //in html
 <!--show user age-->
 
-<div *ngFor="let p of person">
-    {{p.dob | age}}
+<div *ngFor="let data of playlist">
+    {{data?.expiryDate | expiredPipe}}
 </div>
