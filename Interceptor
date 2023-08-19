@@ -1,5 +1,5 @@
 //INTERCEPTOR
-
+//The interceptors work between our app and the server and interact with the request and response.
 1. create interceptor by ng g interceptor
 2. implement HttpInterceptor in class
 3. import HttpInterceptor from angular/common/http
