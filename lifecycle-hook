@@ -1,8 +1,8 @@
-ngOnChanges()
+ngOnChanges() - whenever you want to detect changes from a variable decorated by @Input.
 ngOnInit()
 ngDoCheck()
 ngAfterContentInit()
 ngAfterContentChecked()
-ngAfterViewInit()
+ngAfterViewInit() - when you want to call a lifecycle hook after all child components have been initialized and checked.
 ngAfterViewChecked()
 ngOnDestroy()
