@@ -1,5 +1,14 @@
 //INTERCEPTOR
 //The interceptors work between our app and the server and interact with the request and response.
+// use case of interceptor
+1. modify response
+2. mock the backend api
+3. modify HTTP header
+4. modify the response
+5. error handling
+6. set authantication and authorization
+
+// steps to create interceptor
 1. create interceptor by ng g interceptor
 2. implement HttpInterceptor in class
 3. import HttpInterceptor from angular/common/http
