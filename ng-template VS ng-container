@@ -1,0 +1,2 @@
+//ng-container is parent container which will not render in dom
+//ng-template will not show anything by dedault. it will work with directives
