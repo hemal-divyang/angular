@@ -1,2 +1,13 @@
 //ng-container is parent container which will not render in dom
 //ng-template will not show anything by dedault. it will work with directives
+
+<ng-container *ngIf="condition; then trueBlock else falseBlock"></ng-container>
+
+<ng-template #trueBlock>
+  <p>This is the true block content.</p>
+</ng-template>
+
+<ng-template #falseBlock>
+  <p>This is the false block content.</p>
+</ng-template>
+</ng-container>
