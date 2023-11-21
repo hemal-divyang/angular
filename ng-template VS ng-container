@@ -10,4 +10,3 @@
 <ng-template #falseBlock>
   <p>This is the false block content.</p>
 </ng-template>
-</ng-container>
