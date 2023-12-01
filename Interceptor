@@ -4,9 +4,8 @@
 1. modify response
 2. mock the backend api
 3. modify HTTP header
-4. modify the response
-5. error handling
-6. set authantication and authorization
+4. error handling
+5. set authantication and authorization
 
 // steps to create interceptor
 1. create interceptor by ng g interceptor
