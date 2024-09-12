@@ -1,4 +1,5 @@
-ngOnChanges() - whenever you want to detect changes from a variable decorated by @Input.it track the change detection with non premitive data types
+constructor()
+ngOnChanges() - when data pass parent to child via @Input decorator. only work for primitive data types.
 ngOnInit()
 ngDoCheck() - whenever you want to detect changes from a variable decorated by @Input.it track the change detection with premitive data types
 ngAfterContentInit() - @ContentChild()
@@ -6,3 +7,6 @@ ngAfterContentChecked()
 ngAfterViewInit() - when you want to call a lifecycle hook after all child components have been initialized and checked. @viewChild, @viewChildren
 ngAfterViewChecked()
 ngOnDestroy()
+
+difference between ngOnChanges() and ngDoCheck()
+https://www.youtube.com/watch?v=ijgtD8o5n_4&t=61s
