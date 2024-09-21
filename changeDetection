@@ -1,0 +1,9 @@
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+
+@Component({
+  selector: 'app-example',
+  templateUrl: './example.component.html',
+  changeDetection: ChangeDetectionStrategy.OnPush // Specify OnPush strategy here
+})
+
+https://www.youtube.com/watch?v=WAu7omIoerM&t=897s
