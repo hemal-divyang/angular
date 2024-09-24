@@ -1,3 +1,7 @@
 Q: pass data from child to parent using behaviorsubject
 https://stackblitz.com/edit/angular-examples-swybey?file=app%2Fapp.component.ts,app%2Fchild%2Fchild.component.ts,app%2Fapp.component.html,app%2Fshared.service.ts,app%2Fchild%2Fchild.component.html
 Q: in promiseAll if one promise fail then what happens
+https://stackblitz.com/edit/promise-all-ksgvu1?file=app%2Fapp.component.ts,app%2Fapp.service.ts
+Q: in forkJoin if one observable fail then what happen
+https://stackblitz.com/edit/fork-join-example-angular-edsymk?file=src%2Fapp%2Fapp.component.ts
+
