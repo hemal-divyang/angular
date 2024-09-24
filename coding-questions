@@ -1,2 +1,3 @@
 Q: pass data from child to parent using behaviorsubject
 https://stackblitz.com/edit/angular-examples-swybey?file=app%2Fapp.component.ts,app%2Fchild%2Fchild.component.ts,app%2Fapp.component.html,app%2Fshared.service.ts,app%2Fchild%2Fchild.component.html
+Q: in promiseAll if one promise fail then what happens
