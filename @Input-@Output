@@ -13,7 +13,9 @@ userName:string= 'Hemal'
 child.component.ts
 @Input()uname:string
 
-//child to parent
+//child to parent data communication
+https://stackblitz.com/edit/angular-45mobc?file=src%2Fapp%2Fproduct-list%2Fproduct-list.component.html,src%2Fapp%2Ftop-bar%2Ftop-bar.component.html,src%2Fapp%2Ftop-bar%2Ftop-bar.component.ts,src%2Fapp%2Fproduct-list%2Fproduct-list.component.ts,src%2Fapp%2Fapp.component.html
+
 parent.component.html
 <div>
 	{{childData}}
