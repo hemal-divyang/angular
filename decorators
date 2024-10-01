@@ -1,0 +1,4 @@
+Class Decorators : @Component, @NgModule, @Injectable
+Property Decorators : @Input, @Output, @HostBinding
+Method Decorators : @HostListener
+Parameter Decorators : @Inject
