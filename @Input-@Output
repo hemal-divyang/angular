@@ -4,10 +4,10 @@
 // parent to child
 parent.component.html
 <div>
-	<app-child [uname]="userName"></app-child>
+<app-child [uname]="userName"></app-child>
 </div>
 
-parnet.component.ts
+parent.component.ts
 userName:string= 'Hemal'
 
 child.component.ts
