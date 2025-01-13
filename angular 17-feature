@@ -1,0 +1,8 @@
+1. Declarative Control Flow (ngIf and ngFor replaced with @if and @for)
+<div @if="condition">
+  <p>Condition is true!</p>
+</div>
+
+<div @for="let item of items">
+  <p>{{ item }}</p>
+</div>
