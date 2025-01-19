@@ -3,3 +3,6 @@ start the video after 8:00 minute. it will show realtime example
 
 Signals with Async Data (API Call)
 https://stackblitz.com/edit/angular-16-starter-bey6fffn?file=src%2Fapp.component.ts,src%2Findex.html,src%2Fmain.ts
+
+signal in Search Example
+https://stackblitz.com/edit/angular-fqdccz1x?file=src%2Fcomponents%2Ftest.component.ts,src%2Fmain.ts
