@@ -6,3 +6,5 @@ Q: in forkJoin if one observable fail then what happen
 https://stackblitz.com/edit/fork-join-example-angular-edsymk?file=src%2Fapp%2Fapp.component.ts
 Q: show product list in table and filter based on value enter by user. this filter should be done using pipe
 https://stackblitz.com/edit/angular-table-filter-search-xasq33kv?file=src%2Fapp%2Fpipes%2Fsearch-name.pipe.ts,src%2Fapp%2Fapp.component.html,src%2Fapp%2Fapp.component.ts,src%2Fapp%2Fapp.module.ts,src%2Findex.html
+Q:create product table and on click of product row, page navigate to product detail page
+https://stackblitz.com/edit/angualar-routing-in-angular-demo-example?file=src%2Fapp%2FrouteFiles%2Fproducts%2Fproducts.component.ts
