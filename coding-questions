@@ -4,4 +4,5 @@ Q: in promiseAll if one promise fail then what happens
 https://stackblitz.com/edit/promise-all-ksgvu1?file=app%2Fapp.component.ts,app%2Fapp.service.ts
 Q: in forkJoin if one observable fail then what happen
 https://stackblitz.com/edit/fork-join-example-angular-edsymk?file=src%2Fapp%2Fapp.component.ts
-
+Q: show product list in table and filter based on value enter by user. this filter should be done using pipe
+https://stackblitz.com/edit/angular-table-filter-search-xasq33kv?file=src%2Fapp%2Fpipes%2Fsearch-name.pipe.ts,src%2Fapp%2Fapp.component.html,src%2Fapp%2Fapp.component.ts,src%2Fapp%2Fapp.module.ts,src%2Findex.html
