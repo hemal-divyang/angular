@@ -1,5 +1,5 @@
 constructor()
-ngOnChanges() - when data pass parent to child via @Input decorator. only work for primitive data types.
+ngOnChanges() - when data pass parent to child via @Input decorator. only work for primitive data types. it will hold one parameter (changes:Simplechnages)
 ngOnInit()
 ngDoCheck() - whenever you want to detect changes from a variable decorated by @Input.it track the change detection with premitive data types
 ngAfterContentInit() - @ContentChild()
