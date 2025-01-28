@@ -11,11 +11,13 @@ export class HighlightDirective {
     this.el.nativeElement.style.backgroundColor = color;
   }
 
-  @HostListener('mouseenter') onMouseEnter() {
+  @HostListener('mouseenter')
+  onMouseEnter() {
     this.highlight('yellow');
   }
 
-  @HostListener('mouseleave') onMouseLeave() {
+  @HostListener('mouseleave')
+  onMouseLeave() {
     this.highlight('');
   }
 
