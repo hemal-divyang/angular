@@ -1,7 +1,7 @@
 constructor()
 ngOnChanges() - when data pass parent to child via @Input decorator. only work for primitive data types. it will hold one parameter (changes:Simplechnages)
 ngOnInit()
-ngDoCheck() - whenever you want to detect changes from a variable decorated by @Input.it track the change detection with premitive data types
+ngDoCheck() - whenever you want to detect changes from a variable decorated by @Input.it track the change detection with non premitive data types
 ngAfterContentInit() - @ContentChild()
 ngAfterContentChecked()
 ngAfterViewInit() - when you want to call a lifecycle hook after all child components have been initialized and checked. @viewChild, @viewChildren
