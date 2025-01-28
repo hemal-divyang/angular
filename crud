@@ -13,7 +13,7 @@ postUser(obj){
   return this.http.post(this.apiUrl,obj)
 }
 addUser(){
-  this.apiService.addUser(this.userForm.value).subscribe((user)=>{
+  this.apiService.postUser(this.userForm.value).subscribe((user)=>{
     this.filteredUsers.push(user)
   })
 }
