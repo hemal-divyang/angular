@@ -6,10 +6,10 @@ Inheritance: Components and services can extend each other.
 Abstraction: Services provide APIs without exposing internal details.
 Polymorphism: Methods like ngOnInit() are defined in different classes but behave differently
 
-OOPS Concept  Description                                                      JS Example        Angular Example
-Class        	A blueprint for creating objects                                 class Car {}	     export class Car {}
-Object	      An instance of a class
-Encapsulation	Restrict direct access to some of an object's properties
-Abstraction	  Hides implementation details and shows only necessary features
-Inheritance	  One class inherits from another
-Polymorphism	One interface, multiple implementations
+OOPS Concept  Description                                                      JS Example                        Angular Example
+Class        	A blueprint for creating objects                                 class Car {}	                     export class Car {}
+Object	      An instance of a class                                           let myCar = new Car();            let myCar = new Car();
+Encapsulation	Restrict direct access to some of an object's properties         #privateVar = 10;                 private carModel: string;
+Abstraction	  Hides implementation details and shows only necessary features   class User { getDetails() {} }    getUserDetails() { return this.http.get(); }
+Inheritance	  One class inherits from another                                  class ElectricCar extends Car {}  export class ElectricCar extends Car {}
+Polymorphism	One interface, multiple implementations                          drive(car: Car) { car.move(); }   startEngine(vehicle: Vehicle) { vehicle.engine(); }
