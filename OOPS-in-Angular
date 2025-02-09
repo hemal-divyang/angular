@@ -1,0 +1,15 @@
+Yes! Angular heavily uses OOP concepts:
+
+Classes: Every component, service, and model in Angular is a class.
+Encapsulation: Private and public properties help hide data.
+Inheritance: Components and services can extend each other.
+Abstraction: Services provide APIs without exposing internal details.
+Polymorphism: Methods like ngOnInit() are defined in different classes but behave differently
+
+OOPS Concept  Description                                                      JS Example        Angular Example
+Class        	A blueprint for creating objects                                 class Car {}	     export class Car {}
+Object	      An instance of a class
+Encapsulation	Restrict direct access to some of an object's properties
+Abstraction	  Hides implementation details and shows only necessary features
+Inheritance	  One class inherits from another
+Polymorphism	One interface, multiple implementations
